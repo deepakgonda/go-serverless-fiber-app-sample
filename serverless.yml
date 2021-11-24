@@ -26,6 +26,8 @@ provider:
   lambdaHashingVersion: 20201221
   stage: dev
   region: us-east-2
+  memorySize: 256
+  timeout: 29
 
 
 # you can define service wide environment variables here
