@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "serverless-offline": "^8.3.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {}
+}

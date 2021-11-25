@@ -1,6 +1,5 @@
 ## AWS Lambda - Go Fiber Application with Serverless Deployment
 
-
 ## References
 [AWS Lambda](https://aws.amazon.com/lambda/) - Run code without thinking about servers or clusters (1 million requests free per month with the AWS Free Tier)
 
@@ -15,3 +14,9 @@
 1. Please make sure you have serverless package installed globally.
 2. Go to the build.sh file, change the `servicemind-prod` with your aws profile name (which you can easily configure with `aws configure --profile name`) 
 3. You can then run this file which will build go executable and then deploy it on your aws account in the given region.
+
+
+## Running Locally
+1. Run npm install to install `nodemon` package locally.
+2. Update .env file with environment variables as per your need. 
+3. Run start-local.sh

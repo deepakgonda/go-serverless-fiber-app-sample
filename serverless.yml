@@ -20,6 +20,9 @@ service: test-service
 # Check out our docs for more details
 frameworkVersion: '2'
 
+plugins:
+  - serverless-offline
+
 provider:
   name: aws
   runtime: go1.x
@@ -28,6 +31,21 @@ provider:
   region: us-east-2
   memorySize: 256
   timeout: 29
+  environment:
+    ENV: ${self:provider.stage}
+    REGION: ${self:provider.region}
+    JWT_SECRET_KEY: t6785464sdxfkgxhil8ed@gus4560*&%$%5664)bu54654645
+    JWT_SECRET_KEY_EXPIRE_MINUTES_COUNT: 60
+    JWT_REFRESH_KEY:  "refresh"
+    JWT_REFRESH_KEY_EXPIRE_HOURS_COUNT: 720
+    DB_USER: servicemind
+    DB_PASS: password
+    DB_NAME: tis_database
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_SSL_MODE: false
+    REDIS_HOST: 127.0.0.1
+    REDIS_PORT: 6379
 
 
 # you can define service wide environment variables here
@@ -40,7 +58,7 @@ package:
     - ./bin/**
 
 functions:
-  hello:
+  app:
     handler: bin/server
     events: # events trigger lambda functions
       - http: # this is an API Gateway HTTP event trigger
