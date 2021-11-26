@@ -9,6 +9,8 @@
 
 [Aws Lambda Go Api Proxy](https://github.com/awslabs/aws-lambda-go-api-proxy/blob/master/README.md) - We have used this package to proxy all request from API Gateway to Fiber App running as lambda function.
 
+[Tutorial Go Fiber Rest API](https://github.com/koddr/tutorial-go-fiber-rest-api) - Some examples have been taken from this repo and modified accordingly.
+
 
 ## Deploying the sample
 1. Please make sure you have serverless package installed globally.
