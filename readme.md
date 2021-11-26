@@ -11,6 +11,8 @@
 
 [Tutorial Go Fiber Rest API](https://github.com/koddr/tutorial-go-fiber-rest-api) - Some examples have been taken from this repo and modified accordingly.
 
+[Fiber Go Template](https://github.com/create-go-app/fiber-go-template) - This template have been also used.
+
 
 ## Deploying the sample
 1. Please make sure you have serverless package installed globally.
